@@ -5,7 +5,7 @@ A template to deploy [JSON Server](https://github.com/typicode/json-server) to [
 Demo from this repository: 
 
 1. https://json-server-in.vercel.app
-2. https://json-server-in.vercel.app/api/posts
+2. https://json-server-in.vercel.app/api/products
 
 ![Powered by Vercel](https://images.ctfassets.net/e5382hct74si/78Olo8EZRdUlcDUFQvnzG7/fa4cdb6dc04c40fceac194134788a0e2/1618983297-powered-by-vercel.svg)
 
@@ -22,14 +22,24 @@ Demo from this repository:
 
 ```json
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
+  "products": [
+    {
+      "name": "Computer ",
+      "price": 10000,
+      "quantity": "522",
+      "checked": true,
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Phone",
+      "price": 800,
+      "quantity": 10,
+      "checked": true
+    },    
+  ]
 }
+
 ```
 
 ## Reference
